@@ -37,6 +37,7 @@ public class WordAmounts {
 		
 		String a ="",b="",c="",d="",e="";
 		
+		//removes unwanted characters 
 		try{
 			File file = new File(filename);
 			input = new Scanner(file);
