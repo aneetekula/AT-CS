@@ -1,4 +1,4 @@
-package pqueue; 
+package PQueue;
 
 public class PQTestRunner
 {

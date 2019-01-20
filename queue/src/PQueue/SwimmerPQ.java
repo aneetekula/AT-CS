@@ -1,4 +1,4 @@
-package pqueue;
+package PQueue;
 
 import java.util.Queue;
 import java.util.Arrays;

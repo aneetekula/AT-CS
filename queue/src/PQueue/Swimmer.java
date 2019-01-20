@@ -1,4 +1,4 @@
-package pqueue;
+package PQueue;
 
 public class Swimmer implements Comparable<Swimmer>{
 	//code for instance variable not shown
