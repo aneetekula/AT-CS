@@ -1,0 +1,58 @@
+package bigo;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
+public class QuadraticSortLab {
+	private static int[] nos;
+	
+	public QuadraticSortLab() {
+		nos = new int[10];
+		nos[0] = -10001;
+		nos[1] = 3;
+		nos[2] = 7;
+		nos[3] = 19;
+		nos[4] = 15;
+		nos[5] = 19;
+		nos[6] = 7;
+		nos[7] = 3;
+		nos[8] = 19;
+		nos[9] = -100;
+
+	}
+	
+	public QuadraticSortLab(int size) {
+		nos = new int[size];
+		for(int x: nos){
+			x=(int)(Math.random()+size);
+		}
+	}
+	
+	
+	public static int[] customSort(){
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for(int a: nos){
+			list.add(a);
+		}
+		int[] temp = new int[nos.length];
+		int min;
+		for(int x=0;x<temp.length;x++){
+			min=Collections.min(list);
+			min=list.indexOf(min);
+			temp[x]=list.get(min);
+			list.remove(min);
+		}
+		return temp;
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		QuadraticSortLab.customSort();
+		
+		for(int x : nos){
+			System.out.print(" " + x);
+		}
+	}
+}
